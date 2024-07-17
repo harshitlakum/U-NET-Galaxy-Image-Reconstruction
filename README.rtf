@@ -1,0 +1,31 @@
+# Galaxy Image Reconstruction with U-Net
+
+This repository contains the implementation of the U-Net deep learning model for reconstructing galaxy images from the DECals dataset, which have been subjected to Gaussian noise. The U-Net model is compared to traditional denoising techniques such as Discrete Cosine Transform (DCT) and Discrete Wavelet Transform (DWT) enhanced by the Iterative Shrinkage-Thresholding Algorithm (ISTA).
+
+## Project Overview
+
+The goal of this project is to evaluate the effectiveness of the U-Net model in reconstructing detailed images of galaxies, comparing its performance against more traditional methods under noisy conditions. This research is pivotal for enhancing the quality of astronomical data processing and could significantly impact astrophysical and cosmological research.
+
+## Dataset
+
+The DECals dataset used in this study has been modified with Gaussian noise to simulate real-world imaging challenges. The dataset files are not directly included in this repository due to size constraints but can be accessed as follows:
+
+- **Location:** [https://drive.google.com/drive/folders/1L2Xu7jCGClnM6a26oUrFkVfBOCJdwhHv?usp=share_link]
+- **Description:** Images of galaxies with added Gaussian noise (standard deviation σ = 10, mean zero).
+
+## File Descriptions
+
+- `U-Net_Image_Reconstruction.ipynb` - Jupyter notebook containing the code for the U-Net model implementation, experiments, and comparative analysis.
+- `requirements.txt` - List of dependencies required to run the code.
+
+## Getting Started
+
+Follow these instructions to set up and run the project locally.
+
+### Prerequisites
+
+Ensure you have Python 3.8+ installed on your machine. It is recommended to use a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
